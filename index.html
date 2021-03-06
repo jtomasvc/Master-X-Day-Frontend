@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,300;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <title>Platzi Master Team 16</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--GoogleFonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,300;1,800&display=swap" rel="stylesheet">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!--CustomCss-->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Platzi Master Team 16</title>
+     </head>
 <body>
     <header class=header> 
         <div class="contenedor">
@@ -19,22 +22,73 @@
         </div>
     </header>
 
-    <div class="container">
-        <aside class="aside">
-            <div class="lista">
-                <h1>Team #16</h1>
-
-                <h2>Members</h2>
-                <ul>
-                    <li>Miembros</li>
-                    <li>Miembros</li>
-                    <li>Miembros</li>
-                </ul>
-
-                <h2>Cards</h2>
-                <p></p>
+    <div class="row">
+        <aside class=" col-12 col-lg-4 aside">
+            <div class="aside__boxPrincipal">
+               <h1>Team #16</h1>
+               <div class="aside__progressBar"></div>
+               <span class="aside__progressBar--percent">10%</span>
             </div>
-        </aside>
+            <div class="aside__boxSecondary">
+               <div class="aside__members">
+                  <div class="aside__members--head">
+                     <h2>Members</h2>
+                     <div class="button__plus"></div>
+                  </div>
+                  <div class="members__cards">
+                     <div class="members__cards--image"></div>
+                     <div class="members__cards--text">
+                        <h4>Name</h4>
+                        <p>Charge</p>
+                     </div>
+                  </div>
+                  <div class="members__cards">
+                    <div class="members__cards--image"></div>
+                    <div class="members__cards--text">
+                       <h4>Name</h4>
+                       <p>Charge</p>
+                    </div>
+                 </div>
+                 <div class="members__cards">
+                    <div class="members__cards--image"></div>
+                    <div class="members__cards--text">
+                       <h4>Name</h4>
+                       <p>Charge</p>
+                    </div>
+                 </div>
+               </div>
+            </div>
+            <div class="aside__boxSecondary">
+                <div class="aside__cards">
+                   <div class="aside__cards--head">
+                      <h2>Cards</h2>
+                      
+                   </div>
+                   <div class="cards__cards">
+                      <div class="cards__cards--text">
+                         <h4>Total number of cards</h4>
+                         <p>3</p>
+                      </div>
+                   </div>
+                   
+                </div>
+             </div>
+             <div class="aside__boxSecondary">
+                <div class="aside__lists">
+                   <div class="aside__lists--head">
+                      <h2>Lists</h2>
+                      
+                   </div>
+                   <div class="lists__cards">
+                      <div class="lists__cards--text">
+                         <h4>Total number of lists</h4>
+                         <p>7</p>
+                      </div>
+                   </div>
+                   
+                </div>
+             </div>
+         </aside>
     
         <main class="main">
                 <div class="listas" id="prueba">
@@ -48,8 +102,13 @@
                 </div>
         </main>
     </div>
+     <!--bootstrap js-->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
 </body>
 </html>
